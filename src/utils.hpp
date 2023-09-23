@@ -16,7 +16,7 @@ using namespace std;
 class FileReader {
 
   public:
-    wchar_t* getFileBuffer(locale loc, string name, streampos &size, wchar_t * &buffer);
+    wchar_t* getFileBuffer(locale loc, string name);
     vector<wstring> getStopWords(locale loc);
     vector<wstring> getSearchWords(locale loc);
     int getFileNumber();

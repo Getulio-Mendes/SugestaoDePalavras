@@ -37,7 +37,9 @@ Uma vez que o heap de cada texto é concluído, forma-se os três tipos de árvo
 
 ## Decisões de implementação 
 
-Optou-se por carregar todo os textos para a memória antes de fazer seu processamento ao invés de ler do disco de pouco a pouco devido para otimizar processamento com mais prioridade do que otimizar memória. Mais detalhes sobre isso no trabalho já citado [Top K elementos](https://github.com/Getulio-Mendes/Top-K-elementos). Aqui também foi acrescentado aproveitamento do buffer utilizado para evitar desalocar e alocar memória quando isto não era necessário.
+Optou-se por carregar todo os textos para a memória antes de fazer seu processamento ao invés de ler do disco de pouco a pouco devido para otimizar processamento com mais prioridade do que otimizar memória. Mais detalhes sobre isso no trabalho já citado [Top K elementos](https://github.com/Getulio-Mendes/Top-K-elementos).
+
+Não foi considerado o processamento de textos que não contem nehuma palavra do "input.txt", gerando uma otimização considerável em casos onde o input é apenas de poucas palavras específicas.
 
 Ademais, foi-se utilizado o paradigma orientado á objetos deviado a sua maior intuitividade e facilidade de manejo de memória na maior parte do código, porém nas implementação das ávores, com exeção da Àrvore Binária Padrão, um paradigma estruturado mais parecido à C devido à dificuldade de se pensar numa lógica orientado à objetos para esse tipode programa.
 

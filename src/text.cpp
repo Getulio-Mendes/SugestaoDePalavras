@@ -59,7 +59,7 @@ void Text::fillHeap(vector<wstring> searchWords){
     // Adiciona palavras no heap até atingir o valor de k
     if(this->heap.size() < this->k){
       // somente adiciona no heap palavras diferente das que se quer pesquisar
-      if(find(searchWords.begin(),searchWords.end(),pair.first) != searchWords.end()){
+      if(find(searchWords.begin(),searchWords.end(),pair.first) == searchWords.end()){
         this->heap.push_back(Word(pair.first,pair.second));
       }
 
@@ -95,26 +95,22 @@ bool Text::has(wstring word){
 void Text::fillTrees(){
   // insere nas árvores
 
-  HuffmanTree *h = &this->huffman;
-  this->huffman.create(h, this->heap);
+  this->huffman.create(this->huffmanRoot, this->heap);
   
   for(auto &word : this->heap){
     this->bst.insert(word);
     
-    AVLTree *p = &this->avl;
     pair<wstring,int> pv;
     pv.first = word.getContent();
     pv.second = word.getFrequence();
     
-    this->avl.insert(&(p),pv);
+    this->avl.insert(&this->avlRoot,pv);
   }
 }
 
 void Text::print(ofstream &output){
   this->bst.print(output);
   
-  AVLTree *p = &this->avl;
-  HuffmanTree *h = &this->huffman;
-  this->avl.print(p,output);
-  this->huffman.print(h,output);
+  this->avl.print(this->avlRoot,output);
+  this->huffman.print(this->huffmanRoot,output);
 }

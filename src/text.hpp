@@ -21,6 +21,8 @@ class Text{
     BinaryTree bst;
     AVLTree avl;
     HuffmanTree huffman;
+    AVLTree* avlRoot;
+    HuffmanTree* huffmanRoot;
     vector<Word> heap;
     unordered_map <wstring, int> hash; 
 

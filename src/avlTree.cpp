@@ -25,7 +25,7 @@ void AVLTree::insert(AVLTree **t, const pair<wstring, int> &word) {
       }
     }
 
-    else {
+    else if (word.second > (*t)->data.second) {
       insert(&(*t)->right, word);
       if ((getWeight(&(*t)->right) - getWeight(&(*t)->left)) == 2) {
         if (word.second > (*t)->right->data.second)
@@ -87,13 +87,13 @@ void AVLTree::printPosOrdem(AVLTree *t, ofstream &outputFile) {
   if (!(t == nullptr)) {
     printPosOrdem(t->left, outputFile);
     printPosOrdem(t->right, outputFile);
-    outputFile << this->converter.to_bytes(this->data.first) << " : " << this->data.second << " | ";
+    outputFile << t->converter.to_bytes(t->data.first) << " : " << t->data.second << " | " << endl;
   }
 }
 
 void AVLTree::printPreOrdem(AVLTree *t, ofstream &outputFile) {
   if (!(t == nullptr)) {
-    outputFile << this->converter.to_bytes(this->data.first) << " : " << this->data.second << " | ";
+    outputFile << t->converter.to_bytes(t->data.first) << " : " << t->data.second << " | " << endl;
     printPreOrdem(t->left, outputFile);
     printPreOrdem(t->right, outputFile);
   }
@@ -102,7 +102,7 @@ void AVLTree::printPreOrdem(AVLTree *t, ofstream &outputFile) {
 void AVLTree::printInOrdem(AVLTree *t, ofstream &outputFile) {
   if (!(t == nullptr)) {
     printInOrdem(t->left, outputFile);
-    outputFile << this->converter.to_bytes(this->data.first) << " : " << this->data.second << " | ";
+    outputFile << t->converter.to_bytes(t->data.first) << " : " << t->data.second << " | " << endl;
     printInOrdem(t->right, outputFile);
   }
 }

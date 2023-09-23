@@ -55,12 +55,12 @@ void BinaryTree::printPosOrdem(ofstream& outputFile){
     if(this->right != nullptr)
       this->right->printPosOrdem(outputFile);
     
-    outputFile << this->converter.to_bytes(this->data.getContent()) << " : " << this->data.getFrequence() << " | ";
+    outputFile << this->converter.to_bytes(this->data.getContent()) << " : " << this->data.getFrequence() << " | " << endl;
 }
 
 void BinaryTree::printPreOrdem(ofstream& outputFile){
 
-    outputFile << this->converter.to_bytes(this->data.getContent()) << " : " << this->data.getFrequence() << " | " ;
+    outputFile << this->converter.to_bytes(this->data.getContent()) << " : " << this->data.getFrequence() << " | " << endl;
     
     if(this->left != nullptr)
       this->left->printPreOrdem(outputFile);
@@ -73,7 +73,7 @@ void BinaryTree::printInOrdem(ofstream& outputFile){
     if(this->left != nullptr)
     this->left->printInOrdem(outputFile);
     
-    outputFile << this->converter.to_bytes(this->data.getContent()) << " : " << this->data.getFrequence() << " | ";
+    outputFile << this->converter.to_bytes(this->data.getContent()) << " : " << this->data.getFrequence() << " | " << endl;
     
     if(this->right != nullptr)
     this->right->printInOrdem(outputFile);
@@ -82,7 +82,7 @@ void BinaryTree::printInOrdem(ofstream& outputFile){
 void BinaryTree::print(ofstream& outputFile)
 {
   
-  outputFile << "Binary Tree (Pós-Ordem):\n";
+  outputFile << "\nBinary Tree (Pós-Ordem):\n";
   this->printPosOrdem(outputFile);
 
   outputFile << "\nBinary Tree (Pré-Ordem):\n";

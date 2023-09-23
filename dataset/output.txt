@@ -1,0 +1,436 @@
+					----------data-------------
+
+
+			./dataset/docs/input1.data:
+
+Palavra não está no texto
+			./dataset/docs/input2.data:
+
+Palavra não está no texto
+			./dataset/docs/input3.data:
+
+Palavra não está no texto
+			./dataset/docs/input4.data:
+
+Palavra não está no texto
+			./dataset/docs/input5.data:
+
+Palavra não está no texto
+			./dataset/docs/input6.data:
+
+Palavra não está no texto
+					----------software-------------
+
+
+			./dataset/docs/input1.data:
+
+Palavra não está no texto
+			./dataset/docs/input2.data:
+
+Palavra não está no texto
+			./dataset/docs/input3.data:
+
+Palavra não está no texto
+			./dataset/docs/input4.data:
+
+Palavra não está no texto
+			./dataset/docs/input5.data:
+
+
+Binary Tree (Pós-Ordem):
+sentido : 134 | 
+software : 134 | 
+envolvidos : 134 | 
+hardware : 199 | 
+assim : 199 | 
+impacto : 200 | 
+implantação : 266 | 
+informações : 201 | 
+ti : 201 | 
+segurança : 268 | 
+novas : 201 | 
+dados : 201 | 
+utilização : 399 | 
+melhor : 200 | 
+desenvolvimento : 200 | 
+aumento : 200 | 
+sistema : 200 | 
+tempo : 199 | 
+problemas : 134 | 
+utilizados : 134 | 
+
+Binary Tree (Pré-Ordem):
+utilizados : 134 | 
+problemas : 134 | 
+tempo : 199 | 
+envolvidos : 134 | 
+software : 134 | 
+sentido : 134 | 
+sistema : 200 | 
+assim : 199 | 
+hardware : 199 | 
+aumento : 200 | 
+desenvolvimento : 200 | 
+melhor : 200 | 
+utilização : 399 | 
+dados : 201 | 
+impacto : 200 | 
+novas : 201 | 
+segurança : 268 | 
+ti : 201 | 
+informações : 201 | 
+implantação : 266 | 
+
+Binary Tree (In-Ordem):
+utilizados : 134 | 
+problemas : 134 | 
+envolvidos : 134 | 
+software : 134 | 
+sentido : 134 | 
+tempo : 199 | 
+assim : 199 | 
+hardware : 199 | 
+sistema : 200 | 
+aumento : 200 | 
+desenvolvimento : 200 | 
+melhor : 200 | 
+impacto : 200 | 
+dados : 201 | 
+novas : 201 | 
+ti : 201 | 
+informações : 201 | 
+implantação : 266 | 
+segurança : 268 | 
+utilização : 399 | 
+
+AVL Tree (Pós-Ordem):
+sentido : 134 | 
+software : 134 | 
+problemas : 134 | 
+envolvidos : 134 | 
+hardware : 199 | 
+assim : 199 | 
+impacto : 200 | 
+tempo : 199 | 
+utilizados : 134 | 
+desenvolvimento : 200 | 
+aumento : 200 | 
+informações : 201 | 
+novas : 201 | 
+ti : 201 | 
+implantação : 266 | 
+utilização : 399 | 
+segurança : 268 | 
+dados : 201 | 
+sistema : 200 | 
+melhor : 200 | 
+
+AVL Tree (Pré-Ordem):
+melhor : 200 | 
+utilizados : 134 | 
+envolvidos : 134 | 
+software : 134 | 
+sentido : 134 | 
+problemas : 134 | 
+tempo : 199 | 
+assim : 199 | 
+hardware : 199 | 
+impacto : 200 | 
+sistema : 200 | 
+aumento : 200 | 
+desenvolvimento : 200 | 
+dados : 201 | 
+ti : 201 | 
+informações : 201 | 
+novas : 201 | 
+segurança : 268 | 
+implantação : 266 | 
+utilização : 399 | 
+
+AVL Tree (In-Ordem):
+sentido : 134 | 
+software : 134 | 
+envolvidos : 134 | 
+problemas : 134 | 
+utilizados : 134 | 
+hardware : 199 | 
+assim : 199 | 
+tempo : 199 | 
+impacto : 200 | 
+melhor : 200 | 
+desenvolvimento : 200 | 
+aumento : 200 | 
+sistema : 200 | 
+informações : 201 | 
+ti : 201 | 
+novas : 201 | 
+dados : 201 | 
+implantação : 266 | 
+segurança : 268 | 
+utilização : 399 | 
+
+Huffman Tree (Pós-Ordem):
+desenvolvimento : 200 : 0000 | 
+melhor : 200 : 0001 | 
+sistema : 200 : 0010 | 
+impacto : 200 : 0011 | 
+aumento : 200 : 0100 | 
+ti : 201 : 0101 | 
+informações : 201 : 0110 | 
+dados : 201 : 0111 | 
+novas : 201 : 1000 | 
+implantação : 266 : 1001 | 
+sentido : 134 : 10100 | 
+software : 134 : 10101 | 
+segurança : 268 : 1011 | 
+envolvidos : 134 : 11000 | 
+utilizados : 134 : 11001 | 
+problemas : 134 : 11010 | 
+hardware : 199 : 11011 | 
+assim : 199 : 11100 | 
+tempo : 199 : 11101 | 
+utilização : 399 : 1111 | 
+
+Huffman Tree (Pré-Ordem):
+desenvolvimento : 200 : 0000 | 
+melhor : 200 : 0001 | 
+sistema : 200 : 0010 | 
+impacto : 200 : 0011 | 
+aumento : 200 : 0100 | 
+ti : 201 : 0101 | 
+informações : 201 : 0110 | 
+dados : 201 : 0111 | 
+novas : 201 : 1000 | 
+implantação : 266 : 1001 | 
+sentido : 134 : 10100 | 
+software : 134 : 10101 | 
+segurança : 268 : 1011 | 
+envolvidos : 134 : 11000 | 
+utilizados : 134 : 11001 | 
+problemas : 134 : 11010 | 
+hardware : 199 : 11011 | 
+assim : 199 : 11100 | 
+tempo : 199 : 11101 | 
+utilização : 399 : 1111 | 
+
+Huffman Tree (In-Ordem):
+desenvolvimento : 200 : 0000 | 
+melhor : 200 : 0001 | 
+sistema : 200 : 0010 | 
+impacto : 200 : 0011 | 
+aumento : 200 : 0100 | 
+ti : 201 : 0101 | 
+informações : 201 : 0110 | 
+dados : 201 : 0111 | 
+novas : 201 : 1000 | 
+implantação : 266 : 1001 | 
+sentido : 134 : 10100 | 
+software : 134 : 10101 | 
+segurança : 268 : 1011 | 
+envolvidos : 134 : 11000 | 
+utilizados : 134 : 11001 | 
+problemas : 134 : 11010 | 
+hardware : 199 : 11011 | 
+assim : 199 : 11100 | 
+tempo : 199 : 11101 | 
+utilização : 399 : 1111 | 
+			./dataset/docs/input6.data:
+
+
+Binary Tree (Pós-Ordem):
+uso : 134 | 
+existem : 134 | 
+software : 134 | 
+sistema : 199 | 
+hardware : 200 | 
+informações : 200 | 
+desenvolvimento : 199 | 
+impacto : 199 | 
+dados : 201 | 
+implantação : 267 | 
+utilização : 400 | 
+segurança : 268 | 
+melhor : 201 | 
+aumento : 201 | 
+ti : 201 | 
+assim : 201 | 
+tempo : 199 | 
+novas : 199 | 
+rede : 134 | 
+sobre : 134 | 
+
+Binary Tree (Pré-Ordem):
+sobre : 134 | 
+rede : 134 | 
+novas : 199 | 
+software : 134 | 
+existem : 134 | 
+uso : 134 | 
+tempo : 199 | 
+assim : 201 | 
+impacto : 199 | 
+desenvolvimento : 199 | 
+informações : 200 | 
+sistema : 199 | 
+hardware : 200 | 
+ti : 201 | 
+aumento : 201 | 
+melhor : 201 | 
+segurança : 268 | 
+implantação : 267 | 
+dados : 201 | 
+utilização : 400 | 
+
+Binary Tree (In-Ordem):
+sobre : 134 | 
+rede : 134 | 
+software : 134 | 
+existem : 134 | 
+uso : 134 | 
+novas : 199 | 
+tempo : 199 | 
+impacto : 199 | 
+desenvolvimento : 199 | 
+sistema : 199 | 
+informações : 200 | 
+hardware : 200 | 
+assim : 201 | 
+ti : 201 | 
+aumento : 201 | 
+melhor : 201 | 
+dados : 201 | 
+implantação : 267 | 
+segurança : 268 | 
+utilização : 400 | 
+
+AVL Tree (Pós-Ordem):
+uso : 134 | 
+existem : 134 | 
+rede : 134 | 
+software : 134 | 
+sistema : 199 | 
+desenvolvimento : 199 | 
+tempo : 199 | 
+impacto : 199 | 
+sobre : 134 | 
+hardware : 200 | 
+dados : 201 | 
+informações : 200 | 
+aumento : 201 | 
+assim : 201 | 
+ti : 201 | 
+utilização : 400 | 
+segurança : 268 | 
+implantação : 267 | 
+melhor : 201 | 
+novas : 199 | 
+
+AVL Tree (Pré-Ordem):
+novas : 199 | 
+sobre : 134 | 
+software : 134 | 
+existem : 134 | 
+uso : 134 | 
+rede : 134 | 
+impacto : 199 | 
+desenvolvimento : 199 | 
+sistema : 199 | 
+tempo : 199 | 
+melhor : 201 | 
+informações : 200 | 
+hardware : 200 | 
+dados : 201 | 
+implantação : 267 | 
+ti : 201 | 
+aumento : 201 | 
+assim : 201 | 
+segurança : 268 | 
+utilização : 400 | 
+
+AVL Tree (In-Ordem):
+uso : 134 | 
+existem : 134 | 
+software : 134 | 
+rede : 134 | 
+sobre : 134 | 
+sistema : 199 | 
+desenvolvimento : 199 | 
+impacto : 199 | 
+tempo : 199 | 
+novas : 199 | 
+hardware : 200 | 
+informações : 200 | 
+dados : 201 | 
+melhor : 201 | 
+aumento : 201 | 
+ti : 201 | 
+assim : 201 | 
+implantação : 267 | 
+segurança : 268 | 
+utilização : 400 | 
+
+Huffman Tree (Pós-Ordem):
+utilização : 400 : 000 | 
+informações : 200 : 0010 | 
+hardware : 200 : 0011 | 
+dados : 201 : 0100 | 
+ti : 201 : 0101 | 
+aumento : 201 : 0110 | 
+melhor : 201 : 0111 | 
+assim : 201 : 1000 | 
+implantação : 267 : 1001 | 
+segurança : 268 : 1010 | 
+uso : 134 : 10110 | 
+existem : 134 : 10111 | 
+software : 134 : 11000 | 
+sobre : 134 : 11001 | 
+rede : 134 : 11010 | 
+sistema : 199 : 11011 | 
+impacto : 199 : 11100 | 
+novas : 199 : 11101 | 
+tempo : 199 : 11110 | 
+desenvolvimento : 199 : 11111 | 
+
+Huffman Tree (Pré-Ordem):
+utilização : 400 : 000 | 
+informações : 200 : 0010 | 
+hardware : 200 : 0011 | 
+dados : 201 : 0100 | 
+ti : 201 : 0101 | 
+aumento : 201 : 0110 | 
+melhor : 201 : 0111 | 
+assim : 201 : 1000 | 
+implantação : 267 : 1001 | 
+segurança : 268 : 1010 | 
+uso : 134 : 10110 | 
+existem : 134 : 10111 | 
+software : 134 : 11000 | 
+sobre : 134 : 11001 | 
+rede : 134 : 11010 | 
+sistema : 199 : 11011 | 
+impacto : 199 : 11100 | 
+novas : 199 : 11101 | 
+tempo : 199 : 11110 | 
+desenvolvimento : 199 : 11111 | 
+
+Huffman Tree (In-Ordem):
+utilização : 400 : 000 | 
+informações : 200 : 0010 | 
+hardware : 200 : 0011 | 
+dados : 201 : 0100 | 
+ti : 201 : 0101 | 
+aumento : 201 : 0110 | 
+melhor : 201 : 0111 | 
+assim : 201 : 1000 | 
+implantação : 267 : 1001 | 
+segurança : 268 : 1010 | 
+uso : 134 : 10110 | 
+existem : 134 : 10111 | 
+software : 134 : 11000 | 
+sobre : 134 : 11001 | 
+rede : 134 : 11010 | 
+sistema : 199 : 11011 | 
+impacto : 199 : 11100 | 
+novas : 199 : 11101 | 
+tempo : 199 : 11110 | 
+desenvolvimento : 199 : 11111 | 

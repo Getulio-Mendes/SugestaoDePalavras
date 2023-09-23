@@ -11,9 +11,7 @@ void HuffmanTree::create(HuffmanTree *&t,
 
     data.setFrequence(word.getFrequence());
     data.setContent(word.getContent());
-
-    aux->prob = word.getFrequence();
-
+aux->prob = word.getFrequence();
     aux->data = data;
 
     aux->left = nullptr;
@@ -57,7 +55,7 @@ void HuffmanTree::printPosOrdem(HuffmanTree *t, ofstream &outputFile,
 
   if (!t->data.getContent().empty()) {
     outputFile << this->converter.to_bytes(t->data.getContent()) << " : " << t->data.getFrequence()
-               << " : " << code << " | ";
+               << " : " << code << " | " << endl;
   }
 }
 
@@ -69,7 +67,7 @@ void HuffmanTree::printPreOrdem(HuffmanTree *t, ofstream &outputFile,
 
   if (!t->data.getContent().empty()) {
     outputFile << this->converter.to_bytes(t->data.getContent()) << " : " << t->data.getFrequence()
-               << " : " << code << " | ";
+               << " : " << code << " | " << endl;
   }
 
   printPreOrdem(t->left, outputFile, code + "0");
@@ -88,7 +86,7 @@ void HuffmanTree::printInOrdem(HuffmanTree *t, ofstream &outputFile,
 
   if (!t->data.getContent().empty()) {
     outputFile << this->converter.to_bytes(t->data.getContent()) << " : " << t->data.getFrequence()
-               << " : " << code << " | ";
+               << " : " << code << " | " << endl;
   }
 
   printInOrdem(t->right, outputFile, code + "1");
@@ -101,6 +99,6 @@ void HuffmanTree::print(HuffmanTree *t, ofstream &outputFile) {
   outputFile << "\nHuffman Tree (Pré-Ordem):\n";
   printPreOrdem(t, outputFile, "");
 
-  outputFile << "\nHuffman Tree (In-Ordem):\n";
+  outputFile << "\nHuffman Tree (In-Ordem):\n\n";
   printInOrdem(t, outputFile, "");
 }
