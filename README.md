@@ -29,7 +29,7 @@ Foi-se utilizado também a condificação UTF-8 fornecida pelas bibliotecas do C
 
 Textos que não possuem nenhuma das palavras contidas no "input.txt" são desconsiderados pelo programa, se caso a palavra não esteja em um texto em específico, isso será informado na saída.
 
-Depois se cria um heap de tamanho k (usando o padrão de 20) para cada texto, o heap é inicializado com os primeiros valores da hash e após isso ele será atualizado conforme for pertinente.
+Depois se cria um heap de tamanho k (usando o padrão de 20) para cada texto, o heap é inicializado com os primeiros valores da hash e após isso ele será atualizado conforme for pertinente. Mais detalhes sobre o processo podem ser vistos no projeto [Top K elementos](https://github.com/Getulio-Mendes/Top-K-elementos), no qual este projeto se baseia.
 
 A atualização do heap é feita compararando cada palavra restante da hash com o menor valor do heap, isto é, a palavra com menor frequência. Se a contagem for maior do que o menor valor da heap, o elemento do heap é removido, e o novo elemento é inserido no heap. A cada elemento inserido o ```heapify``` é utilizado, mantendo a estrutura heap correta. Um detalhe importante é que as palavras a serem completadas não podem ser colocadas no heap.
 
@@ -37,6 +37,9 @@ Uma vez que o heap de cada texto é concluído, forma-se os três tipos de árvo
 
 ## Decisões de implementação 
 
+Optou-se por carregar todo os textos para a memória antes de fazer seu processamento ao invés de ler do disco de pouco a pouco devido para otimizar processamento com mais prioridade do que otimizar memória. Mais detalhes sobre isso no trabalho já citado [Top K elementos](https://github.com/Getulio-Mendes/Top-K-elementos). Aqui também foi acrescentado aproveitamento do buffer utilizado para evitar desalocar e alocar memória quando isto não era necessário.
+
+Ademais, foi-se utilizado o paradigma orientado á objetos deviado a sua maior intuitividade e facilidade de manejo de memória na maior parte do código, porém nas implementação das ávores, com exeção da Àrvore Binária Padrão, um paradigma estruturado mais parecido à C devido à dificuldade de se pensar numa lógica orientado à objetos para esse tipode programa.
 
 ## Conclusão
 
