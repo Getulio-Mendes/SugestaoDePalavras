@@ -1,0 +1,2 @@
+- cada palavra tera um output para cada arvore 
+---
