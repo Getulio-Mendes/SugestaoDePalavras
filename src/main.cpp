@@ -66,7 +66,7 @@ int main() {
       
       // Ignora palavras não present no texto
       if(text.has(word))
-        text.print(word,output);
+        text.print(output);
       else
         output << "Palavra não está no texto" << endl;
     }   

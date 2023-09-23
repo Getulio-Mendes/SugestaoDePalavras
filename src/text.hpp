@@ -9,6 +9,8 @@
 #include "word.hpp"
 #include "utils.hpp"
 #include "binaryTree.hpp"
+#include "avlTree.hpp"
+#include "huffman.hpp"
 
 using namespace std;
 
@@ -17,6 +19,8 @@ class Text{
     // Número de elementos no heap
     static const int k = 20;
     BinaryTree bst;
+    AVLTree avl;
+    HuffmanTree huffman;
     vector<Word> heap;
     unordered_map <wstring, int> hash; 
 
@@ -27,7 +31,7 @@ class Text{
     void updateHeap(pair<wstring,int> w);
     void fillTrees();
     bool has(wstring word);
-    void print(wstring word, ofstream &output);
+    void print(ofstream &output);
 };
 
 #endif

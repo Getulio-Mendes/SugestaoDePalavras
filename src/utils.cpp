@@ -14,7 +14,7 @@ streampos getSize(wifstream &stream){
 }
 
 string FileReader::getFileName(int x){
-  return "./dataset/text" + to_string(x) + ".data";
+  return "./dataset/docs" + to_string(x) + ".data";
 }
 
 int FileReader::getFileNumber(){

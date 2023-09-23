@@ -11,9 +11,12 @@ class Word {
     int frequence;
 
   public:
+    Word();
     Word(wstring content, int frequence);
     wstring getContent();
     int getFrequence();
+    void setContent(wstring word);
+    void setFrequence(int frequence);
     bool operator <(const Word &w);
 };
 

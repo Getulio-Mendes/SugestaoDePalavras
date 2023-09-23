@@ -74,8 +74,6 @@ void Text::fillHeap(vector<wstring> searchWords){
       }
     }
   }
-
-  return true;
 }
 
 void Text::updateHeap(pair<wstring,int> w){
@@ -96,15 +94,27 @@ bool Text::has(wstring word){
 
 void Text::fillTrees(){
   // insere nas árvores
-  for(auto &Word : this->heap){
-    this->bst.insert(Word);
-    //this->avl.insert(Word);
-    //this->huffman.insert(Word);
+
+  HuffmanTree *h = &this->huffman;
+  this->huffman.create(h, this->heap);
+  
+  for(auto &word : this->heap){
+    this->bst.insert(word);
+    
+    AVLTree *p = &this->avl;
+    pair<wstring,int> pv;
+    pv.first = word.getContent();
+    pv.second = word.getFrequence();
+    
+    this->avl.insert(&(p),pv);
   }
 }
 
-void Text::print(wstring word, ofstream &output){
+void Text::print(ofstream &output){
   this->bst.print(output);
-  //this->avl.print(output);
-  //this->huffman.print(output);
+  
+  AVLTree *p = &this->avl;
+  HuffmanTree *h = &this->huffman;
+  this->avl.print(p,output);
+  this->huffman.print(h,output);
 }
